@@ -29,7 +29,7 @@ adapting to whoever logs in.
 **My role:** sole engineer. Requirements gathering on-site, data modelling, build,
 deployment onto hotel hardware, and ongoing support.
 
-**Timeline:** repository history spans 28 Feb – 25 Jun 2026 across 75 commits.
+**Timeline:** built and deployed over roughly four months, early-to-mid 2026.
 **Status:** live in production.
 
 ---
@@ -199,13 +199,45 @@ to the person using the system.
 
 ---
 
-## Scale and outcomes
+## What changed for the business
 
-- **5 role types**: housekeeping, front desk, supervisor, manager, admin
-- Replaced a clipboard-and-slips housekeeping process with live room state
-- Payroll derived from recorded attendance instead of reconstructed from a register at month-end
-- Every room status change written to an immutable activity log
-- *[Add real figures you're comfortable sharing: rooms, daily active staff, months in production]*
+**The front desk stopped having to ask whether a room was ready.**
+Room readiness used to live on a supervisor's clipboard and in the heads of whoever
+had walked that floor. It is now a state every role reads from the same place, the
+moment it changes. The two failure modes that motivated the build — checking a guest
+into a room nobody had confirmed was clean, and leaving a clean room empty because
+the news hadn't travelled — both depended on that information being unshared.
+
+**Housekeeping assignments stopped being paper slips.**
+Work is assigned to a named person with a priority and a due date, and lands on
+their phone as a notification rather than as a slip that has to be physically
+carried to them. Nothing is assigned to "whoever is on that floor."
+
+**A room coming back from maintenance returns to the right state.**
+Maintenance is treated as an interruption rather than a step, so the system
+remembers what the room was before someone flagged the broken air conditioner and
+puts it back there. Previously that was a judgement call someone had to make from
+memory.
+
+**Payroll stopped being reconstructed at month-end.**
+Attendance used to be scribbled in a register and turned into salary figures in a
+rush at the end of the month. Duty is now recorded as it happens and payroll is
+derived from it — present days, absences, deductions and net pay computed from the
+same record, with advances and bonuses tracked against it.
+
+**Leave requests stopped being conversations nobody could later verify.**
+Requests carry dates, type, reason and an approval state, so both staff and
+management can see what was asked and what was decided.
+
+**Every status change became attributable.**
+Who cleaned which room, when, who delivered what, who reported a fault — all of it
+is written to an activity log as it happens. That log is also what the daily
+performance view is computed from, so the report and the audit trail cannot
+disagree with each other.
+
+**And salary figures stopped being visible to whoever was standing nearby.**
+The admin terminal sits at a front desk where staff and guests pass constantly.
+Pay figures are masked by default and revealed one row at a time.
 
 ---
 
