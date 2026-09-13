@@ -5,7 +5,9 @@
 > client property — this repository documents the architecture, interface and
 > engineering decisions.**
 
-![Room status board](docs/screenshots/10-front-desk-rooms.png)
+![Walkthrough — login, live room board, housekeeping view, tasks, payroll, reporting](docs/walkthrough.gif)
+
+<sub>Sign in · live room board with occupancy · housekeeping's own scoped view · task assignment · payroll with figures masked by default · daily reporting. Recorded against a local demo database — every guest name, staff name and figure shown is invented.</sub>
 
 ---
 
