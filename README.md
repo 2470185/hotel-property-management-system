@@ -108,12 +108,39 @@ payroll.
 
 ## Interface
 
+Full walkthrough of the system. **[Features and functionality →](FEATURES.md)**
+
+### The floor
+
 | | |
 |---|---|
-| ![Payroll](docs/screenshots/07-payroll.png) | ![Reporting](docs/screenshots/09-reporting.png) |
-| Attendance-derived payroll, figures masked by default | Live duty status and daily staff performance |
-| ![Manager tasks](docs/screenshots/02-manager-tasks.png) | ![Mobile](docs/screenshots/12-mobile-housekeeping.png) |
-| Task assignment with priority | Housekeeping on a phone |
+| ![Room status board](docs/screenshots/10-front-desk-rooms.png) | ![Housekeeping view](docs/screenshots/11-housekeeping-view.png) |
+| **Front desk** — live occupancy with guest names, stay day counts and checkout markers | **Housekeeping** — the same rooms, scoped to what this person is responsible for |
+
+### Work and people
+
+| | |
+|---|---|
+| ![Manager tasks](docs/screenshots/02-manager-tasks.png) | ![Staff roster](docs/screenshots/08-staff-roster.png) |
+| **Tasks** — assigned to a named person with priority and due date | **Staff** — records, roles and duty state |
+| ![Leave management](docs/screenshots/04-leave-management.png) | ![Admin dashboard](docs/screenshots/05-admin-dashboard.png) |
+| **Leave** — requests with type, dates and an approval trail | **Admin** — full navigation across every area |
+
+### Pay and reporting
+
+| | |
+|---|---|
+| ![Payroll](docs/screenshots/07-payroll.png) | ![Manager pay track](docs/screenshots/03-manager-paytrack.png) |
+| **Payroll** — derived from attendance, figures masked by default | **Pay track** — the manager's view of the same records |
+| ![Reporting](docs/screenshots/09-reporting.png) | ![Room inventory](docs/screenshots/06-room-status-board.png) |
+| **Reporting** — live duty status and per-person daily performance | **Inventory** — rooms by floor, added and managed by admin |
+
+### Access and mobile
+
+| | |
+|---|---|
+| ![Login](docs/screenshots/01-login.png) | <img src="docs/screenshots/12-mobile-housekeeping.png" alt="Mobile housekeeping" width="300"> |
+| **Login** — one entry point for all five roles | **Housekeeping on a phone** — where most of this work actually happens |
 
 *All screenshots are captured against a locally seeded demo database. Every guest
 name, staff name and figure shown is invented.*
