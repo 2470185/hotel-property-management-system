@@ -1,7 +1,7 @@
 # Hotel Property Management System
 
 > Production system used daily by hotel operations staff across five role-based
-> logins. Built and deployed solo under contract. **Application source is private
+> logins. Built and deployed solo as a freelance project. **Application source is private
 > client property — this repository documents the architecture, interface and
 > engineering decisions.**
 
